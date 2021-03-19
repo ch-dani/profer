@@ -1,0 +1,497 @@
+.menu-area {
+    background: #004953
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border: 0 solid transition!important;
+    border: 0 solid rgba(0, 0, 0, .15);
+    border-radius: 0;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important
+}
+
+.mainmenu a,
+.navbar-default .navbar-nav>li>a,
+.mainmenu ul li a,
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 16px 15px;
+    font-family: 'Roboto', sans-serif;
+    display: block !important;
+}
+
+.mainmenu .active a,
+.mainmenu .active a:focus,
+.mainmenu .active a:hover,
+.mainmenu li a:hover,
+.mainmenu li a:focus,
+.navbar-default .navbar-nav>.show>a,
+.navbar-default .navbar-nav>.show>a:focus,
+.navbar-default .navbar-nav>.show>a:hover {
+    color: #fff;
+    background: #72838675;
+    outline: 0;
+}
+
+
+/*==========Sub Menu=v==========*/
+
+.mainmenu .collapse ul>li:hover>a {
+    background: #72838675;
+}
+
+.mainmenu .collapse ul ul>li:hover>a,
+.navbar-default .navbar-nav .show .dropdown-menu>li>a:focus,
+.navbar-default .navbar-nav .show .dropdown-menu>li>a:hover {
+    background: #72838675;
+}
+
+.mainmenu .collapse ul ul ul>li:hover>a {
+    background: #72838675;
+}
+
+.mainmenu .collapse ul ul,
+.mainmenu .collapse ul ul.dropdown-menu {
+    background: #004953;
+}
+
+.mainmenu .collapse ul ul ul,
+.mainmenu .collapse ul ul ul.dropdown-menu {
+    background: #004953
+}
+
+.mainmenu .collapse ul ul ul ul,
+.mainmenu .collapse ul ul ul ul.dropdown-menu {
+    background: #004953
+}
+
+
+/* ***********************searchbar*******************************/
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search_input {
+    color: #004953;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    font-size: 15px;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 200px;
+    caret-color: black;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: #004953;
+    color: white;
+}
+
+.search_icon {
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #004953;
+    text-decoration: none;
+}
+
+
+/******************************Drop-down menu work on hover**********************************/
+
+.mainmenu {
+    background: none;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+    .mainmenu .collapse ul li:hover>ul {
+        display: block
+    }
+    .mainmenu .collapse ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 250px;
+        display: none
+    }
+    /*******/
+    .mainmenu .collapse ul ul li {
+        position: relative
+    }
+    .mainmenu .collapse ul ul li:hover>ul {
+        display: block
+    }
+    .mainmenu .collapse ul ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 250px;
+        display: none
+    }
+    /*******/
+    .mainmenu .collapse ul ul ul li {
+        position: relative
+    }
+    .mainmenu .collapse ul ul ul li:hover ul {
+        display: block
+    }
+    .mainmenu .collapse ul ul ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 250px;
+        display: none;
+        z-index: 1
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav .show .dropdown-menu .dropdown-menu>li>a {
+        padding: 16px 15px 16px 35px
+    }
+    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu>li>a {
+        padding: 16px 15px 16px 45px
+    }
+    .mainmenu .collapse ul li:hover>ul {
+        display: block
+    }
+    .mainmenu .collapse ul ul {
+        position: relative;
+    }
+    /*******/
+    .mainmenu .collapse ul ul li {
+        position: relative
+    }
+    .mainmenu .collapse ul ul ul {
+        position: relative;
+    }
+    /*******/
+    .mainmenu .collapse ul ul ul li {
+        position: relative
+    }
+    .mainmenu .collapse ul ul ul ul {
+        position: relative;
+    }
+}
+
+
+/* *************************product********************************** */
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.productCardContainer {
+    padding: 30px;
+}
+
+.productCardContent {
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 3px solid #004953;
+    background: #004953;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.productCardContent .productCardImage {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.productCardContent .productCardImage img {
+    position: relative;
+    display: block;
+    min-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.productCardContent:hover .productCardImage img {
+    opacity: 0.8;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.productCardContent .productCardImage .imageCardEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 10px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-indent: 9999px;
+}
+
+.productCardContent .productCardImage .imageCardEffect::before,
+.productCardContent .productCardImage .imageCardEffect::after {
+    pointer-events: none;
+}
+
+.productCardContent .productCardImage .imageCardEffect::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: rotate(45deg) scale(2) translate(0px, -100%);
+    -moz-transform: rotate(45deg) scale(2) translate(0px, -100%);
+    -o-transform: rotate(45deg) scale(2) translate(0px, -100%);
+    -ms-transform: rotate(45deg) scale(2) translate(0px, -100%);
+    transform: rotate(45deg) scale(2.5) translate(0px, -100%);
+}
+
+.productCardContent:hover .productCardImage .imageCardEffect::before {
+    -webkit-transform: rotate(45deg) scale(2) translate(0px, 100%);
+    -moz-transform: rotate(45deg) scale(2) translate(0px, 100%);
+    -o-transform: rotate(45deg) scale(2) translate(0px, 100%);
+    -ms-transform: rotate(45deg) scale(2) translate(0px, 100%);
+    transform: rotate(45deg) scale(2.5) translate(0px, 100%);
+}
+
+
+/*======================== Card Details Style */
+
+.productCardDetails {
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.productCardDetails .productCardModel {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 20px 10px 20px;
+}
+
+.productCardDetails .productCardModel a:link,
+.productCardDetails .productCardModel .accessoryDesc {
+    color: #004953;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.productCardDetails .productCardModel a span,
+.productCardDetails .productCardModel .accessoryDesc span {
+    font-size: 18px;
+    display: block;
+}
+
+.productCardDetails .productCardModel a span b,
+.productCardDetails .productCardModel .accessoryDesc span b {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.productCardContent:hover .productCardDetails .productCardModel a,
+.productCardContent:hover .productCardDetails .productCardModel .accessoryDesc {
+    color: white;
+}
+
+.modelCardEffect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.productCardContent .productCardDetails .modelCardEffect::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #004953;
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: skew(40deg, 0deg) translate(-150%, 0px);
+    -moz-transform: skew(40deg, 0deg) translate(-150%, 0px);
+    -o-transform: skew(40deg, 0deg) translate(-150%, 0px);
+    -ms-transform: skew(40deg, 0deg) translate(-150%, 0px);
+    transform: skew(40deg, 0deg) translate(-150%, 0px);
+}
+
+.productCardContent:hover .productCardDetails .modelCardEffect::before {
+    -webkit-transform: skew(0deg, 0deg) translate(0%, 0px);
+    -moz-transform: skew(0deg, 0deg) translate(0%, 0px);
+    -o-transform: skew(0deg, 0deg) translate(0%, 0px);
+    -ms-transform: skew(0deg, 0deg) translate(0%, 0px);
+    transform: skew(0deg, 0deg) translate(0%, 0px);
+}
+
+.productCardContent .productCardDetails .productCardDetailsList {
+    position: relative;
+    height: 150px;
+}
+
+.productCardContent .productCardDetails .productCardDetailsList .list-group {
+    margin-bottom: 0!important;
+}
+
+.productCardContent .productCardDetails .productCardDetailsList .list-group .list-group-item {
+    color: #004953 !important;
+}
+
+.productCardContent .productCardDetails .productCardDetailsList .list-group .list-group-item .detailIcon {
+    position: relative;
+    width: 40px;
+    padding-left: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.productCardContent .productCardDetails .productCardDetailsList .list-group .list-group-item .detailInfo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.productCardContent .productCardDetails .accessoryCardDetailsList {
+    position: relative;
+    height: 50px;
+}
+
+.productCardContent .productCardDetails .accessoryCardDetailsList .list-group {
+    margin-bottom: 0!important;
+}
+
+.productCardContent .productCardDetails .accessoryCardDetailsList .list-group .list-group-item {
+    color: #004953 !important;
+}
+
+.productCardContent .productCardDetails .accessoryCardDetailsList .list-group .list-group-item .detailIcon {
+    position: relative;
+    width: 40px;
+    padding-left: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.productCardContent .productCardDetails .accessoryCardDetailsList .list-group .list-group-item .detailInfo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.productCardContent .productCardPrice {
+    position: relative;
+    text-align: center;
+}
+
+.productCardContent .productCardPrice a,
+.productCardContent .productCardPrice button {
+    border: none !important;
+    width: 40%;
+    margin: 4% !important;
+    padding: 0 !important;
+    text-align: center;
+    line-height: 35px;
+    background: transparent;
+    color: #004953;
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+}
+
+.productCardContent:hover .productCardPrice a,
+.productCardContent:hover .productCardPrice button {
+    background: #004953;
+    color: white;
+}
+
+.productCardPrice a:hover,
+.productCardPrice a:focus,
+.productCardPrice a:hover,
+.productCardPrice button:focus {
+    background: #004953;
+    color: #004953;
+}
+
+.productCardContent .productCardPrice .inCart,
+.productCardPrice .inCart:focus {
+    color: #004953 !important;
+    background: #81c868 !important;
+}
+
+.accessoryAdminCard {
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+
+/* ******************** endproduct ************************************** */
+
+
+/* *****************************SLIDER**************************** */
+
+
+/* *****************************SLIDER END**************************** */
